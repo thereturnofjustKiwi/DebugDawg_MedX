@@ -10,11 +10,12 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
 
-    ALLOWED_ORIGINS: List[str] = [
-        "http://localhost:3000",
-        "http://localhost:5173",
-        "http://127.0.0.1:3000",
-    ]
+    # ALLOWED_ORIGINS: List[str] = [
+    #     "http://localhost:3000",
+    #     "http://localhost:5173",
+    #     "http://127.0.0.1:3000",
+    # ]
+    ALLOWED_ORIGINS: List[str] = ["*"]
 
     MODEL_WEIGHTS_DIR: Path = Path("model_weights")
     BACKGROUND_SAMPLES_DIR: Path = Path("background_samples")

@@ -1,0 +1,142 @@
+# ─────────────────────────────────────────────
+# PYTHON
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+wheels/
+
+# ─────────────────────────────────────────────
+# VIRTUAL ENVIRONMENTS
+# ─────────────────────────────────────────────
+.venv/
+venv/
+venv3.11/
+env/
+ENV/
+.env.bak
+.venv.bak
+
+# ─────────────────────────────────────────────
+# ENVIRONMENT / SECRETS  ← most critical
+# ─────────────────────────────────────────────
+.env
+.env.local
+.env.production
+.env.staging
+!.env.example
+
+
+
+# ─────────────────────────────────────────────
+# SHAP BACKGROUND TENSORS
+# ─────────────────────────────────────────────
+backend/background_samples/*.pt
+backend/background_samples/*.npy
+!backend/background_samples/.gitkeep
+
+# ─────────────────────────────────────────────
+# DATASETS  ← never commit training data
+# ─────────────────────────────────────────────
+datasets/
+data/
+*.zip
+*.tar.gz
+*.tar
+*.gz
+
+# ─────────────────────────────────────────────
+# PYTEST / COVERAGE
+# ─────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.coveragerc
+nosetests.xml
+test-results/
+
+# ─────────────────────────────────────────────
+# JUPYTER NOTEBOOKS (Dev 1's training artifacts)
+# ─────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─────────────────────────────────────────────
+# NODE / FRONTEND (for when frontend dev adds their folder)
+# ─────────────────────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/dist/
+frontend/build/
+frontend/.cache/
+frontend/.vite/
+frontend/coverage/
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+!frontend/.env.example
+
+# ─────────────────────────────────────────────
+# DOCKER
+# ─────────────────────────────────────────────
+.dockerignore
+
+# ─────────────────────────────────────────────
+# OS FILES
+# ─────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─────────────────────────────────────────────
+# IDE / EDITORS
+# ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sublime-project
+*.sublime-workspace
+
+# ─────────────────────────────────────────────
+# LOGS
+# ─────────────────────────────────────────────
+*.log
+logs/
+log/
+
+# ─────────────────────────────────────────────
+# MISC ARTIFACTS
+# ─────────────────────────────────────────────
+*.pkl
+*.pickle
+temp/
+tmp/
+.temp/
+sample_images/
+test_outputs/
